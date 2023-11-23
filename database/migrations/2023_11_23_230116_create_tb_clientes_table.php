@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('first_name', 50);
             $table->string('last_name', 100);
             $table->string('email', 100)->index();
-            $table->string('cpf', 100)->unique()->index();
+            $table->string('cpf', 50)->unique()->index();
             $table->date('birth_day');
             $table->char('gender', 1);
             $table->timestamps();
