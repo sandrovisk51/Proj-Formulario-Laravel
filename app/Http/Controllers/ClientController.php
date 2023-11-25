@@ -68,14 +68,6 @@ class ClientController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     */
-    public function show(int $id)
-    {
-        //
-    }
-
-    /**
      * Show the form for editing the specified resource.
      */
     public function edit(int $id)
@@ -83,14 +75,6 @@ class ClientController extends Controller
             //Find client for editing
             $client = Client::find($id);
             return view('form.edit-client')->with('client', $client)->with('step', 'Editar Cadastro');
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, int $id)
-    {
-        //
     }
 
     /**
