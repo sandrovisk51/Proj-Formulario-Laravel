@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ClientController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/form-client', function () {
+//     return view('form.register-client');
+// });
+
+Route::get('/list-client', [ClientController::class, 'index'])->name('list.client');
+Route::get('/form-client', [ClientController::class, 'create'])->name('form.client');
+Route::post('/register-client', [ClientController::class, 'store'])->name('register.client');
+Route::get('/edit-client/{id}', [ClientController::class, 'edit'])->name('edit.client')->where('id', '[0-9]+');
+Route::get('/del-client/{id}', [ClientController::class, 'destroy'])->name('del.client')->where('id', '[0-9]+');
+Route::get('/api-client/{id}', [ClientController::class, 'http_client'])->name('http.client')->where('id', '[0-9]+');
