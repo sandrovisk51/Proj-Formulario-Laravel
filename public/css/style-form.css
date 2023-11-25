@@ -610,6 +610,10 @@ input.error {
       max-width: 10%;
     }
 
+    .cart-ip4y{
+      max-height: 70%;
+    }
+
     .center-vertical{
       display: flex;
       align-items: center; 
@@ -618,3 +622,27 @@ input.error {
     .padding-left-3{
       padding-left: 3%;
     }
+
+    .input-cor-green{
+      background-color: #90eb9c;
+    }
+
+    .alert-box{
+      display:block;
+      position:fixed;
+      width:400px;
+      font-size: 20px;
+      padding:10px 20px 20px;
+      background:#ecf5d8;
+      border:1px solid #faf4f4;
+      color: #0f5018;
+      border-radius: 10px;
+      text-align:center;
+      transform:translate(-50%,-50%);
+      top:40%;
+      left:50%;
+      z-index:99999;
+      -webkit-box-shadow: 0px 0px 33px -6px rgba(218, 141, 69, 0.541);
+      -moz-box-shadow: 0px 0px 33px -6px rgba(218, 141, 69, 0.541);
+      box-shadow: 0px 0px 33px -6px rgba(218, 141, 69, 0.541);
+   }
