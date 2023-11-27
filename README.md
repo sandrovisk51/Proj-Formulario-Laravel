@@ -48,7 +48,7 @@ Utilizado os seguintes frameworks
 
 ## 📌 Observação
 
-O projeto feito em laravel está visível no diretório principal, o conteúdo projeto em react esta no diretório "app-form".
+O projeto feito em laravel está visível no diretório principal, o conteúdo projeto em react no repositorio [Mirroring-React](https://github.com/sandrovisk51/Proj-Mirroring-React/).
 
 ## ✒️ Autor
 
